@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# SonarCloud Setup Script
+# This script helps you complete the SonarCloud setup
+
+echo "🔧 SonarCloud Setup Helper"
+echo "=========================="
+echo ""
+
+echo "✅ Code Implementation Complete!"
+echo "  - pom.xml updated with SonarCloud plugin"
+echo "  - sonar-project.properties created"
+echo "  - GitHub Actions workflows configured"
+echo "  - Security vulnerabilities added for demonstration"
+echo ""
+
+echo "📋 NEXT STEPS REQUIRED:"
+echo ""
+
+echo "1️⃣ Create SonarCloud Account:"
+echo "   - Go to https://sonarcloud.io"
+echo "   - Sign in with your GitHub account: namgay282004"
+echo "   - Import organization: namgay282004"
+echo "   - Select repository: ci-cd-a"
+echo ""
+
+echo "2️⃣ Generate SonarCloud Token:"
+echo "   - In SonarCloud: Account → My Account → Security"
+echo "   - Generate token named: 'cicd-demo-github-actions'"
+echo "   - Copy the token (you won't see it again!)"
+echo ""
+
+echo "3️⃣ Configure GitHub Secrets:"
+echo "   - Go to your repository: https://github.com/Namgay282004/ci-cd-a"
+echo "   - Settings → Secrets and variables → Actions"
+echo "   - Add SONAR_TOKEN: [paste your token]"
+echo "   - Add SONAR_ORGANIZATION: namgay282004"
+echo ""
+
+echo "4️⃣ Push Changes and Test:"
+echo "   git add ."
+echo "   git commit -m \"feat: Add SonarCloud integration with security analysis\""
+echo "   git push origin master"
+echo ""
+
+echo "5️⃣ Monitor Results:"
+echo "   - GitHub Actions: Check workflow execution"
+echo "   - SonarCloud Dashboard: Review security findings"
+echo "   - Expected findings:"
+echo "     * SQL Injection vulnerabilities"
+echo "     * Path traversal issues"
+echo "     * Hard-coded credentials"
+echo "     * Weak cryptography (MD5)"
+echo "     * Information disclosure"
+echo ""
+
+echo "📊 Expected Security Findings:"
+echo "   🔴 Critical: SQL Injection (VulnerableController.getUserById)"
+echo "   🔴 High: Path Traversal (VulnerableController.readFile)"
+echo "   🟡 Medium: Hard-coded credentials (DB_PASSWORD, API_KEY)"
+echo "   🟡 Medium: Weak cryptography (MD5 hashing)"
+echo "   🟡 Medium: Command injection risk"
+echo "   🟡 Medium: Information disclosure"
+echo ""
+
+echo "📝 Files Modified/Created:"
+echo "   ✅ pom.xml - SonarCloud & JaCoCo plugins"
+echo "   ✅ sonar-project.properties - Project configuration"
+echo "   ✅ .github/workflows/maven.yml - Enhanced with SonarCloud"
+echo "   ✅ .github/workflows/sonarcloud.yml - Dedicated security workflow"
+echo "   ✅ VulnerableController.java - Demo security vulnerabilities"
+echo "   ✅ VulnerableControllerTest.java - Test coverage"
+echo "   ✅ SONARCLOUD_SETUP_REPORT.md - Comprehensive documentation"
+echo "   ✅ SECURITY_CHECKLIST.md - Implementation checklist"
+echo ""
+
+echo "🔗 Important Links:"
+echo "   SonarCloud: https://sonarcloud.io"
+echo "   Project Dashboard: https://sonarcloud.io/dashboard?id=namgay282004_ci-cd-a"
+echo "   GitHub Repo: https://github.com/Namgay282004/ci-cd-a"
+echo ""
+
+echo "⚠️  REMINDER: The VulnerableController contains intentional security"
+echo "    vulnerabilities for demonstration purposes only. DO NOT use"
+echo "    this code in production environments!"
+echo ""
+
+echo "🎯 Success Criteria:"
+echo "   - SonarCloud shows security analysis results"
+echo "   - GitHub Actions workflows run successfully"
+echo "   - Quality gate is configured and enforced"
+echo "   - At least 5+ security issues are identified"
+echo "   - Screenshots taken for submission"
+echo ""
+
+echo "✨ Setup complete! Follow the steps above to finish the integration."
